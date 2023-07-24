@@ -22,6 +22,11 @@ You can do this on the original repository to get help by the original creator o
 
 You can do this here to get help by me (zip6como)
 
+## Fool proof tutorial
+You can view a full tutorial on getting this to work here:
+
+https://github.com/zip6como/hanime-auto-coins-plus/wiki
+
 ## How does it work?
 When we observe the requests made by the app to it's server, we'll see that, to get coins the app makes a request containing a reward token. The server then validates the reward token and gives us the coins. The token is generated on the client side somewhere when you click on an ad.
 
