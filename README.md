@@ -13,6 +13,7 @@ Tested on current version 3.11.4 -by zip6como
 `pip install -r requirements.txt`
 3. Open `.env` file and enter your hanime email and password
 4. Run the script.
+
   A more indepth tutorial is down below.
 
 If you get any errors or need any help, feel free to open an issue.
