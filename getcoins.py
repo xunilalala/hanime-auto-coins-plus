@@ -1,3 +1,4 @@
+#THIS IS THE MAIN FILE THAT COLLECTS THE FREE COINS
 import json
 import os
 import time
@@ -6,6 +7,8 @@ from hashlib import sha256
 import requests
 from dateutil import parser
 from dotenv import load_dotenv
+import sys
+
 
 load_dotenv()
 
@@ -92,6 +95,12 @@ def getCoins(s: requests.Session, version, uid):
 
 
 def main():
+#THIS IS TO CONFIGURE WICH FILE TO OPEN AND WHAT TO WRITE IN IT
+    sys.stdout = open("house.txt", "w")
+
+    sys.stdout.write('```')
+    sys.stdout.write('\n')
+#-CONFIG END-
     s = requests.Session()
 
     info = login(s, hanime_email, hanime_password)
@@ -111,7 +120,6 @@ def main():
         print(f"[*] Never clicked on an ad")
 
     getCoins(s, info["version"], info["uid"])
-
 
 if __name__ == "__main__":
     main()
