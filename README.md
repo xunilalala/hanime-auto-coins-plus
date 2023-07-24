@@ -24,7 +24,6 @@ You can do this here to get help by me (zip6como)
 
 ## Fool proof tutorial
 You can view a full tutorial on getting this to work here:
-
 https://github.com/zip6como/hanime-auto-coins-plus/wiki
 
 ## How does it work?
