@@ -41,3 +41,11 @@ in response. On inspection of actual requests made by the app, we see that it in
 This time the signature wasn't generated in the javascript code, but inside the react native modules in java. Again the signature turned out to be SHA-256 hash of a dynamically generated string based on current time. 
 
 After this we can include these headers in our request each time to make fake requests.
+
+# Credits
+[WeaveAche](https://github.com/WeaveAche) - The creator of the original script <br> 
+--> [ipdan4ik](https://github.com/ipdan4ik) - Contributor to the original script <br>
+--> [Golumpa](https://github.com/Golumpa) - Contributor to the original script <br>
+--> [Alistair1231](https://github.com/Alistair1231) - Contributor to the original script <br>
+[zip6como](https://github.com/zip6como) - Creator of this fork & full tutorial on how to use
+           
