@@ -7,14 +7,9 @@ Tested on ~~current~~ outdated version 3.7.1
 
 Tested on current version 3.11.4 -by zip6como
 
-## Usage
-1. Clone this repository 
-2. Install all the requirements:
-`pip install -r requirements.txt`
-3. Open `.env` file and enter your hanime email and password
-4. Run the script.
-
-  A more indepth tutorial is down below.
+## Full tutorial with pictures to get this working
+You can view a full tutorial on getting this to work here:
+https://github.com/zip6como/hanime-auto-coins-plus/wiki
 
 If you get any errors or need any help, feel free to open an issue.
 
@@ -22,9 +17,13 @@ You can do this on the original repository to get help by the original creator o
 
 You can do this here to get help by me (zip6como)
 
-## Fool proof tutorial
-You can view a full tutorial on getting this to work here:
-https://github.com/zip6como/hanime-auto-coins-plus/wiki
+## Quickstart (advanced users)
+1. Clone this repository 
+2. Install all the requirements:
+`pip install -r requirements.txt`
+3. Open `.env` file and enter your hanime email and password
+4. Open the webhook.py and enter your webhook
+5. Run the script.
 
 ## How does it work?
 When we observe the requests made by the app to it's server, we'll see that, to get coins the app makes a request containing a reward token. The server then validates the reward token and gives us the coins. The token is generated on the client side somewhere when you click on an ad.
