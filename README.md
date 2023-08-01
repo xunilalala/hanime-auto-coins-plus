@@ -37,6 +37,9 @@ Other linux distro: maybe [you probably can install python on your distro but i 
 Android phone: unlikely [i don't know if there is python for android but i won't provide any help] <br>
 iPhone: No [apple does not allow you to install apps outside of the appstore and i won't provide any help] <br>
 
+## I have a problem/suggestion
+Open an issue [here](https://github.com/zip6como/hanime-auto-coins-plus/issues) don't forget to follow the template.
+
 ## How does it work?
 When we observe the requests made by the app to it's server, we'll see that, to get coins the app makes a request containing a reward token. The server then validates the reward token and gives us the coins. The token is generated on the client side somewhere when you click on an ad.
 
