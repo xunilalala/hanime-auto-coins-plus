@@ -3,7 +3,7 @@ The hanime mobile app gives coins as a reward for clicking on an ad. This has a 
 
 This script when run, will forge a request to the server claiming that you have clicked on the ad. The server then adds the coins to your account. It still checks the last clicked time, so you can only run this once every 3 hours. But this makes it easier to automate getting coins.
 
-Optionaly it will send the amout of coins you currently have to your discord webhook automoticaly.
+Optionaly it will send the amout of coins you currently have to your discord webhook automaticaly.
 
 Tested on ~~current~~ outdated version 3.7.1
 
@@ -57,12 +57,20 @@ This time the signature wasn't generated in the javascript code, but inside the 
 
 After this we can include these headers in our request each time to make fake requests.
 
-# Legal
+## Legal
 I do not take any responsibility for this tool usage in the malicious purposes. It is free, open-source and provided AS-IS for everyone. <br>
 Any requests by Hanime.tv to take this down will be followed. <br>
 The original creator of this script (the core of this repository) has not provided a license for his repository so any requests by him to take this down will be followed.
 
-# Credits
+## I have a personal request
+Sure you can contact me here: <br>
+mail@zip6como.net
+
+## Contributing
+Fork this repositorum and make a pull request. <br>
+If your pull request gets accepted you get a spot down below.
+
+## Credits
 [WeaveAche](https://github.com/WeaveAche) - The creator of the original script <br> 
 --> [ipdan4ik](https://github.com/ipdan4ik) - Contributor to the original script <br>
 --> [Golumpa](https://github.com/Golumpa) - Contributor to the original script <br>
