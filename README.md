@@ -53,7 +53,7 @@ This time the signature wasn't generated in the javascript code, but inside the 
 After this we can include these headers in our request each time to make fake requests.
 
 # Legal
-I do not take any responsibility for this tool usage in the malicious purposes. It is free, open-source and provided AS-IS for everyone.
+I do not take any responsibility for this tool usage in the malicious purposes. It is free, open-source and provided AS-IS for everyone. <br>
 Any requests by Hanime.tv to take this down will be followed.
 
 # Credits
