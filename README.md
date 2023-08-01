@@ -68,7 +68,9 @@ mail@zip6como.net
 
 ## Contributing
 Fork this repositorum and make a pull request. <br>
-If your pull request gets accepted you get a spot down below.
+If your pull request gets accepted you get a spot down below. <br>
+
+You can also just report spelling mistakes or other mistakes anywhere in the repository [here](https://github.com/zip6como/hanime-auto-coins-plus/issues) (but only major ones get credited down below).
 
 ## Credits
 [WeaveAche](https://github.com/WeaveAche) - The creator of the original script <br> 
