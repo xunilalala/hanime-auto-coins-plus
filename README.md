@@ -54,7 +54,8 @@ After this we can include these headers in our request each time to make fake re
 
 # Legal
 I do not take any responsibility for this tool usage in the malicious purposes. It is free, open-source and provided AS-IS for everyone. <br>
-Any requests by Hanime.tv to take this down will be followed.
+Any requests by Hanime.tv to take this down will be followed. <br>
+The original creator of this script (the core of this repository) has not provided a license for his repository so any requests by him to take this down will be followed.
 
 # Credits
 [WeaveAche](https://github.com/WeaveAche) - The creator of the original script <br> 
