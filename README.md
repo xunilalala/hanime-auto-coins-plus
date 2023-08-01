@@ -3,6 +3,8 @@ The hanime mobile app gives coins as a reward for clicking on an ad. This has a 
 
 This script when run, will forge a request to the server claiming that you have clicked on the ad. The server then adds the coins to your account. It still checks the last clicked time, so you can only run this once every 3 hours. But this makes it easier to automate getting coins.
 
+Optionaly it will send the amout of coins you currently have to your discord webhook automoticaly.
+
 Tested on ~~current~~ outdated version 3.7.1
 
 Tested on current version 3.11.4 -by zip6como
