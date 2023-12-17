@@ -1,18 +1,37 @@
 name: hanime-auto-coins
+
 on:
   workflow_dispatch:
   schedule:
-    # IMPORTANT: Set cron job in UTC timezone
-    - cron:  '0 18 * * *'
+    - cron: '0 3,18 * * *'
+
 
 jobs:
-  run-python-script:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
     runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-python@v2
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: Checkout
+        uses: actions/checkout@v2
+      # Runs a single command using the runners shell
+      - name: 'Set up Python'
+        uses: actions/setup-python@v1
         with:
-          python-version: '3.8.0'
-      - run: pip install -r requirements.txt
-      - run: python webhook.py
-      
+           python-version: 3.7
+      - name: 'Cache pip packages'
+        uses: actions/cache@v2
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+      - name: 'Install requirements'
+        run: pip install -r ./requirements.txt
+
+      - name: 'Working'
+        run: |
+          python ./webhook.py
