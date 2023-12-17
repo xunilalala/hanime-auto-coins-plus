@@ -34,4 +34,4 @@ jobs:
 
       - name: 'Working'
         run: |
-          python ./webhook.py
+          python ./AIO.py
