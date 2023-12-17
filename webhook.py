@@ -26,7 +26,7 @@ def send_to_discord_webhook(webhook_url, file_path):
 
 #THIS IS TO CONFIGURE THE WEBHOOK
 if __name__ == "__main__":
-    webhook_url = os.getenv('webhook_url')
+    webhook_url = os.environ["WEBHOOK_URL "]
     file_path = "house.txt"  # Update the file path accordingly
 #-CONFIG END-
 
