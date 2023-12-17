@@ -14,7 +14,7 @@ load_dotenv()
 
 host = "https://www.universal-cdn.com"
 
-hanime_email =  os.environ["HANIME_EMAIL "]
+hanime_email =  os.environ["HANIME_EMAIL"]
 hanime_password =  os.environ["HANIME_PASSWORD"]
 
 
