@@ -3,8 +3,7 @@ name: hanime-auto-coins
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 3,18 * * *'
-
+    - cron: '27 */4 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
