@@ -14,8 +14,8 @@ load_dotenv()
 
 host = "https://www.universal-cdn.com"
 
-hanime_email = os.getenv('hanime_email')
-hanime_password = os.getenv('hanime_password')
+hanime_email =  os.environ["HANIME_EMAIL "]
+hanime_password =  os.environ["HANIME_PASSWORD"]
 
 
 def getSHA256(to_hash):
@@ -122,4 +122,6 @@ def main():
     getCoins(s, info["version"], info["uid"])
 
 if __name__ == "__main__":
+    print(hanime_password)
     main()
+    
