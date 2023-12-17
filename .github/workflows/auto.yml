@@ -5,33 +5,36 @@ on:
   schedule:
     - cron: '0 3,18 * * *'
 
-
 jobs:
-  # This workflow contains a single job called "build"
   build:
-    # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Checkout
         uses: actions/checkout@v2
-      # Runs a single command using the runners shell
-      - name: 'Set up Python'
+
+      - name: Set up Python
         uses: actions/setup-python@v1
         with:
-           python-version: 3.7
-      - name: 'Cache pip packages'
+          python-version: 3.7
+
+      - name: Cache pip packages
         uses: actions/cache@v2
         with:
           path: ~/.cache/pip
           key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
           restore-keys: |
             ${{ runner.os }}-pip-
-      - name: 'Install requirements'
+
+      - name: Install requirements
         run: pip install -r ./requirements.txt
 
-      - name: 'Working'
+      - name: Set up Environment
+        run: |
+          echo "hanime_email=${{ secrets.HANIME_EMAIL }}" > .env
+          echo "hanime_password=${{ secrets.HANIME_PASSWORD }}" >> .env
+          echo "webhook_url=${{ secrets.WEBHOOK_URL }}" >> .env
+
+      - name: Working
         run: |
           python ./AIO.py
