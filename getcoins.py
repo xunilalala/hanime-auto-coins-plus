@@ -122,6 +122,5 @@ def main():
     getCoins(s, info["version"], info["uid"])
 
 if __name__ == "__main__":
-    print(hanime_password)
     main()
     
